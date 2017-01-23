@@ -13,7 +13,8 @@ jsonfile.readFile(file, (err, obj) => {
       name: 'camera01', 
       url: url, 
       port: 9962,
-      width: 320,
+      width: 213,
+      height: 120,
     })
     
     console.log('Stream Xiaomi camera to websocket: ws://localhost:9962')
