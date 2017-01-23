@@ -14,6 +14,9 @@ jsonfile.readFile(file, (err, obj) => {
       url: url, 
       port: 9962 
     })
+    
+    console.log('Stream Xiaomi camera to websocket: ws://localhost:9962')
+    
     stream01.start()
   }
   catch (err) { console.log('Stream 01 failed !', err) }
@@ -25,6 +28,9 @@ jsonfile.readFile(file, (err, obj) => {
       url: url, 
       port: 9963
     })
+    
+    console.log('Stream Xiaomi camera to websocket: ws://localhost:9963')
+    
     stream02.start()
   }
   catch (err) { console.log('Stream 02 failed !', err) }
