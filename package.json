@@ -1,0 +1,15 @@
+{
+  "name": "rtsp-2-ws",
+  "version": "0.1.0",
+  "description": "RTSP stream to WebSocket",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Wifsimster",
+  "license": "ISC",
+  "dependencies": {
+    "jsonfile": "^2.4.0",
+    "node-rtsp-stream-es6": "^1.0.4"
+  }
+}
