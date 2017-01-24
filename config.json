@@ -4,12 +4,14 @@
     "camera_01": {
       "ip": "192.168.0.62",
       "port": "554",
-      "format": "ch0_0.h264"
+      "format_hd": "ch0_0.h264",
+      "format_ld": "ch0_1.h264"
     },
     "camera_02": {
       "ip": "192.168.0.63",
       "port": "554",
-      "format": "ch0_0.h264"
+      "format_hd": "ch0_0.h264",
+      "format_ld": "ch0_1.h264"
     }
   }
 }

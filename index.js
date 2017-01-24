@@ -6,7 +6,7 @@ jsonfile.readFile(file, (err, obj) => {
   const camera01 = obj.cameras.camera_01
   const camera02 = obj.cameras.camera_02
 
-  let url = `rtsp://${camera01.ip}:${camera01.port}/${camera01.format}`
+  let url = `rtsp://${camera01.ip}:${camera01.port}/${camera01.format_ld}`
 
   try {
     const stream01 = new Stream({ 
