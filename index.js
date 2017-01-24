@@ -14,24 +14,24 @@ jsonfile.readFile(file, (err, obj) => {
       url: url, 
       port: 9962,
     })
-    
+
     console.log('Stream Xiaomi camera to websocket: ws://localhost:9962')
-    
+
     stream01.start()
   }
   catch (err) { console.log('Stream 01 failed !', err) }
 
-//  try {
-//    let url = `rtsp://${camera02.ip}:${camera02.port}/${camera02.format}`
-//    let stream02 = new Stream({
-//      name: 'camera02', 
-//      url: url, 
-//      port: 9963
-//    })
-//    
-//    console.log('Stream Xiaomi camera to websocket: ws://localhost:9963')
-//    
-//    stream02.start()
-//  }
-//  catch (err) { console.log('Stream 02 failed !', err) }
+  try {
+    let url = `rtsp://${camera02.ip}:${camera02.port}/${camera02.format_ld}`
+    let stream02 = new Stream({
+      name: 'camera02', 
+      url: url, 
+      port: 9963
+    })
+
+    console.log('Stream Xiaomi camera to websocket: ws://localhost:9963')
+
+    stream02.start()
+  }
+  catch (err) { console.log('Stream 02 failed !', err) }
 })
